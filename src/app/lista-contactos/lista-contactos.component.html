@@ -1,0 +1,12 @@
+<br/>
+<h3>Lista Contactos</h3>
+<div class="d-flex" >
+    <ul class="list-group" *ngIf="listaContactos">
+        <li class="list-group-item" *ngFor="let contacto of listaContactos">
+            <p>
+                {{ contacto.first_name }} {{ contacto.last_name }}
+            </p>
+        </li>
+    </ul>
+</div>
+
