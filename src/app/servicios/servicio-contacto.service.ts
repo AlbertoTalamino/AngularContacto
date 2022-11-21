@@ -12,4 +12,8 @@ export class ServicioContactoService {
   getContacto(): Observable<any>{
     return this.http.get<any>('https://reqres.in/api/users?page=2')  
   }
+
+  getDetail(id: number): any {
+    return this.http.get<any>(`https://reqres.in/api/users/${id}`);
+  }
 }

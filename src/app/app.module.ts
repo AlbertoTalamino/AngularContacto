@@ -7,18 +7,22 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ListaContactosComponent } from './lista-contactos/lista-contactos.component';
 import { DetallesContactosComponent } from './detalles-contactos/detalles-contactos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaContactosComponent,
-    DetallesContactosComponent
+    DetallesContactosComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
